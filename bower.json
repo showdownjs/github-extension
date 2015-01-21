@@ -1,0 +1,34 @@
+{
+  "name": "showdown-github",
+  "description": "Github extension for showdown",
+  "homepage": "https://github.com/showdownjs/github-extension",
+  "license": "BSD",
+  "authors": [
+    "Estevão Santos (https://github.com/tivie)",
+    "Pascal Deschênes (https://github.com/pdeschen)",
+    "Corey Innis (https://github.com/coreyti)",
+    "John Fraser"
+  ],
+  "keywords": [
+    "markdown",
+    "showdown",
+    "showdown extension",
+    "github"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/showdownjs/github-extension.git",
+    "web": "https://github.com/showdownjs/github-extension"
+  },
+  "main": ["dist/showdown-github.js"],
+  "ignore": [
+    "src/",
+    "test/",
+    ".editorconfig",
+    ".gitignore",
+    ".jscs.json",
+    ".jshintrc",
+    ".travis.yml",
+    "Gruntfile.js"
+  ]
+}
