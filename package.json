@@ -1,6 +1,6 @@
 {
   "name": "showdown-github",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Github extension for showdown",
   "keywords": [
     "markdown",
@@ -16,7 +16,7 @@
     "web": "https://github.com/showdownjs/github-extension"
   },
   "bugs": {
-    "url": "https://github.com/nodejitsu/browsenpm.org/issues"
+    "url": "https://github.com/showdownjs/github-extension/issues"
   },
   "main": "./dist/showdown-github-extension.js",
   "scripts": {
