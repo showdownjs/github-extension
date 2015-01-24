@@ -1,4 +1,4 @@
-/*! showdown-github 21-01-2015 */
+/*! showdown-github 24-01-2015 */
 //
 //  Github Extension (WIP)
 //  ~~strike-through~~   ->  <del>strike-through</del>

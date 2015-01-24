@@ -1,6 +1,8 @@
 module.exports = function (grunt) {
   'use strict';
 
+  require('shelljs/global');
+
   var config = {
     pkg: grunt.file.readJSON('package.json'),
     concat: {
@@ -63,7 +65,7 @@ module.exports = function (grunt) {
     },
     githooks: {
       all: {
-        'pre-commit': 'build'
+        'pre-commit': 'pre-commit'
       }
     }
   };
@@ -82,6 +84,12 @@ module.exports = function (grunt) {
   grunt.registerTask('lint', ['jshint', 'jscs']);
   grunt.registerTask('test', ['lint', 'mocha', 'simplemocha']);
   grunt.registerTask('build', ['test', 'concat', 'uglify']);
+  grunt.registerTask('pre-commit', ['build', 'add-compressed-to-git']);
+
+  // Add compressed and minified files before committing
+  grunt.registerTask('add-compressed-to-git', function () {
+    exec('git add dist/');
+  });
 
   grunt.registerTask('default', []);
 };
