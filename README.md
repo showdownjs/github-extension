@@ -1,7 +1,7 @@
 Showdown's Github Extension
 ==========================
 
-[![Build Status](https://travis-ci.org/showdownjs/github-extension.svg)](https://travis-ci.org/showdownjs/github-extension.svg) [![npm version](https://badge.fury.io/js/showdown-github.svg)](http://badge.fury.io/js/showdown-github) [![npm version](https://badge.fury.io/bo/showdown-github.svg)](http://badge.fury.io/bo/showdown-github)
+[![Build Status](https://travis-ci.org/showdownjs/github-extension.svg)](https://travis-ci.org/showdownjs/github-extension) [![npm version](https://badge.fury.io/js/showdown-github.svg)](http://badge.fury.io/js/showdown-github) [![npm version](https://badge.fury.io/bo/showdown-github.svg)](http://badge.fury.io/bo/showdown-github)
 
 ------
 
