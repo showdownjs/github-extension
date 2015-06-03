@@ -5,6 +5,15 @@ module.exports = function (grunt) {
 
   var config = {
     pkg: grunt.file.readJSON('package.json'),
+    comments: {
+      js: {
+        options: {
+          singleline: true,
+          multiline: true
+        },
+        src: ['dist/showdown-github.js']
+      }
+    },
     concat: {
       options: {
         banner: '/*! <%= pkg.name %> <%= grunt.template.today("dd-mm-yyyy") %> */\n',
@@ -72,18 +81,11 @@ module.exports = function (grunt) {
 
   grunt.initConfig(config);
 
-  grunt.loadNpmTasks('grunt-contrib-concat');
-  grunt.loadNpmTasks('grunt-contrib-uglify');
-  grunt.loadNpmTasks('grunt-contrib-jshint');
-  grunt.loadNpmTasks('grunt-simple-mocha');
-  grunt.loadNpmTasks('grunt-mocha');
-  grunt.loadNpmTasks('grunt-jscs');
-  grunt.loadNpmTasks('grunt-conventional-changelog');
-  grunt.loadNpmTasks('grunt-githooks');
+  require('load-grunt-tasks')(grunt);
 
   grunt.registerTask('lint', ['jshint', 'jscs']);
-  grunt.registerTask('test', ['lint', 'mocha', 'simplemocha']);
-  grunt.registerTask('build', ['test', 'concat', 'uglify']);
+  grunt.registerTask('test', ['lint', 'simplemocha']);
+  grunt.registerTask('build', ['test', 'comments', 'concat', 'uglify']);
   grunt.registerTask('pre-commit', ['build', 'add-compressed-to-git']);
 
   // Add compressed and minified files before committing

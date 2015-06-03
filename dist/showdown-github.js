@@ -1,4 +1,4 @@
-/*! showdown-github 31-05-2015 */
+/*! showdown-github 03-06-2015 */
 //
 //  Github Extension (WIP)
 //  ~~strike-through~~   ->  <del>strike-through</del>
@@ -22,8 +22,8 @@
   };
 
   // Client-side export
-  if (typeof window !== 'undefined' && window.Showdown && window.Showdown.extensions) {
-    window.Showdown.extensions.github = github;
+  if (typeof window !== 'undefined' && window.showdown && window.showdown.extensions) {
+    window.showdown.extensions.github = github;
   }
   // Server-side export
   if (typeof module !== 'undefined') {
