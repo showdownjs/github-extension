@@ -71,11 +71,6 @@ module.exports = function (grunt) {
           run: true
         }
       }
-    },
-    githooks: {
-      all: {
-        'pre-commit': 'pre-commit'
-      }
     }
   };
 
@@ -86,12 +81,6 @@ module.exports = function (grunt) {
   grunt.registerTask('lint', ['jshint', 'jscs']);
   grunt.registerTask('test', ['lint', 'simplemocha']);
   grunt.registerTask('build', ['test', 'concat', 'comments', 'uglify']);
-  grunt.registerTask('pre-commit', ['build', 'add-compressed-to-git']);
-
-  // Add compressed and minified files before committing
-  grunt.registerTask('add-compressed-to-git', function () {
-    exec('git add dist/');
-  });
 
   grunt.registerTask('default', []);
 };

@@ -8,8 +8,8 @@
     "showdown extension",
     "github"
   ],
-  "author": "John Fraser",
-  "license": "BSD",
+  "author": "Estevão Santos",
+  "license": "BSD-2-Clause",
   "repository": {
     "type": "git",
     "url": "https://github.com/showdownjs/github-extension.git",
