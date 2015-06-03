@@ -21,6 +21,9 @@
     "web": "https://github.com/showdownjs/github-extension"
   },
   "main": ["dist/showdown-github.js"],
+  "dependencies": {
+    "showdown": "1.0.x"
+  },
   "ignore": [
     "src/",
     "test/",
