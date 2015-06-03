@@ -85,7 +85,7 @@ module.exports = function (grunt) {
 
   grunt.registerTask('lint', ['jshint', 'jscs']);
   grunt.registerTask('test', ['lint', 'simplemocha']);
-  grunt.registerTask('build', ['test', 'comments', 'concat', 'uglify']);
+  grunt.registerTask('build', ['test', 'concat', 'comments', 'uglify']);
   grunt.registerTask('pre-commit', ['build', 'add-compressed-to-git']);
 
   // Add compressed and minified files before committing
