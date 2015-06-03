@@ -5,15 +5,6 @@ module.exports = function (grunt) {
 
   var config = {
     pkg: grunt.file.readJSON('package.json'),
-    comments: {
-      js: {
-        options: {
-          singleline: true,
-          multiline: true
-        },
-        src: ['dist/showdown-github.js']
-      }
-    },
     concat: {
       options: {
         banner: '/*! <%= pkg.name %> <%= grunt.template.today("dd-mm-yyyy") %> */\n',
@@ -22,6 +13,15 @@ module.exports = function (grunt) {
       dist: {
         src: ['src/*.js'],
         dest: 'dist/<%= pkg.name %>.js'
+      }
+    },
+    comments: {
+      js: {
+        options: {
+          singleline: true,
+          multiline: true
+        },
+        src: ['<%= concat.dist.dest %>']
       }
     },
     uglify: {
