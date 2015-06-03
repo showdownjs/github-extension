@@ -21,7 +21,8 @@ Adds support for github flavored markdown.
 
 ### Manual
 
-You can also [download the latest release zip or tarball](https://github.com/showdownjs/github-extension/releases) and include it in your webpage, after showdown:
+You can also [download the latest release zip or tarball](https://github.com/showdownjs/github-extension/releases) and 
+include it in your webpage, after showdown:
 
     <script src="showdown.min.js">
     <script src="showdown-github.min.js">
@@ -30,12 +31,12 @@ You can also [download the latest release zip or tarball](https://github.com/sho
 
 After including the extension in your application, you just need to enable it in showdown.
 
-    var converter = new Showdown.converter({extensions: ['github']});
+    var converter = new showdown.Converter({extensions: ['github']});
 
 ## Example
 
 ```javascript
-var converter = new Showdown.converter({extensions: ['github']}),
+var converter = new showdown.Converter({extensions: ['github']}),
     input = 'This is a ~~deleted text~~',
     html = converter.makeHtml(input);
     console.log(html);
@@ -48,5 +49,6 @@ This should output:
 ```
 
 ## License
-These files are distributed under BSD license. For more information, please check the [LICENSE file](https://github.com/showdownjs/github-extension/blob/master/LICENSE) in the source code.
+These files are distributed under BSD license. For more information, 
+please check the [LICENSE file](https://github.com/showdownjs/github-extension/blob/master/LICENSE) in the source code.
 
