@@ -1,8 +1,6 @@
 module.exports = function (grunt) {
   'use strict';
 
-  require('shelljs/global');
-
   var config = {
     pkg: grunt.file.readJSON('package.json'),
     concat: {
