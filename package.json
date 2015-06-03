@@ -20,7 +20,6 @@
   },
   "main": "./dist/showdown-github-extension.js",
   "scripts": {
-    "postinstall": "grunt githooks",
     "test": "grunt test"
   },
   "dependencies": {

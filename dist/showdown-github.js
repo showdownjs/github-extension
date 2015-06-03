@@ -1,4 +1,5 @@
 /*! showdown-github 03-06-2015 */
+
 (function () {
   'use strict';
 
