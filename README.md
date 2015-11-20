@@ -5,6 +5,16 @@ Showdown's Github Extension
 
 ------
 
+# IMPORTANT NOTICE
+
+**THIS EXTENSION IS DEPRECATED**
+
+As of showdown v 1.2.0, github support was moved into core as an opt-in feature making this extension obsolete.
+As such, this extension will not receive further updates.
+
+------
+
+
 **Github extension for [showdown](https://github.com/showdownjs/showdown)**
 
 Adds support for github flavored markdown.
